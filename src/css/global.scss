@@ -1,0 +1,80 @@
+body{
+	background: #f1f1f1;
+}
+
+#task-list{
+	border: 1px solid #444;
+	display: block;
+    min-height: 400px;
+    margin: 20px 0px;
+    padding: 0;
+
+	li{
+		display: inline-block;
+		width:100%;
+		position: relative;
+		padding: 10px 5px 5px;
+
+		p{
+			padding: 10px 0px 0;
+		}
+
+		.remove-task{
+			position: absolute;
+		    right: 10px;
+		    top: 5px;
+			padding: 0px 4px;
+		}
+
+		.complete{
+			float:right;
+			padding-right:10px;
+			font-size: 1.2rem;
+		}
+		.date{
+			padding-left: 30px;
+		}
+	} //li
+   
+} //#task-list
+
+
+span{
+	padding-right:10px;
+}
+
+li.due-now{
+	background: pink;
+	border: 1px solid red;
+}
+li.overdue{
+	background: red;
+	border: 1px solid chocolate;
+}
+li.toggleCompleted{
+	color: #ccc;
+	text-decoration: line-through;
+}
+.hidden{
+	display:none;
+}
+#add-task{
+	margin-bottom:10px
+}
+#filters{
+	
+	padding:20px 0 10px;
+	
+	li{
+		float: left;
+		list-style-type: none;
+		padding-left:20px;
+
+		input{
+			cursor: pointer;
+		}
+	}
+}
+.hidden{
+	display:none;
+}

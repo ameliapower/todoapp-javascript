@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Do App</title>
+	<link rel="stylesheet" href="./vendor/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="col-sm-6">
+			<h2>Do something</h2>
+			<form id="add-task-form">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+				</div>
+				<div class="form-group">
+					<label for="description">Description</label>
+					<textarea type="Description" class="form-control" id="description" placeholder="Description" rows="3"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="duedate">Due Date</label>
+					<input type="date" class="form-control" id="dueDate" aria-describedby="duedateHelp" placeholder="Enter Due Date">
+				</div>
+				<button id="add-task" class="btn btn-primary">Add Task</button>
+
+				<div class="alert alert-danger hidden" role="alert">
+				All fields are required
+				</div>
+			</form>
+		</div><!--.col-sm-6-->
+
+		<div class="col-sm-6">
+			<ul id="filters">
+				<li><input type="radio" name="filterOptions" value="duesoon" id="filter-duesoon">
+					<label class="form-check-label" for="duesoon">Due soon</label>
+				</li>
+				<li><input type="radio" name="filterOptions" value="overdue" id="filter-overdue">
+					<label class="form-check-label" for="overdue">Overdue</label>
+				</li>
+				<li><input type="radio" name="filterOptions" value="completed" id="filter-completed">
+					<label class="form-check-label" for="completed">Completed</label>
+				</li>
+				<li><input type="radio" name="filterOptions" value="all" id="clear-filter">
+					<label class="form-check-label" for="clear-filter">All</label>
+				</li>
+			</ul><!--#filters-->
+		  	<ul id="task-list" class="list-unstyled"></ul>
+	  	</div><!--.col-sm-6-->
+
+	</div><!--.container-->
+
+</body>
+</html>
