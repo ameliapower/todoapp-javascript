@@ -14,15 +14,15 @@
 			<form id="add-task-form">
 				<div class="form-group">
 					<label for="name">Name</label>
-					<input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+					<input type="name" class="form-control" id="name" aria-describedby="task name" placeholder="Enter name">
 				</div>
 				<div class="form-group">
 					<label for="description">Description</label>
-					<textarea type="Description" class="form-control" id="description" placeholder="Description" rows="3"></textarea>
+					<textarea type="Description" class="form-control" id="description" aria-describedby="task description" placeholder="Description" rows="3"></textarea>
 				</div>
 				<div class="form-group">
 					<label for="duedate">Due Date</label>
-					<input type="date" class="form-control" id="dueDate" aria-describedby="duedateHelp" placeholder="Enter Due Date">
+					<input type="date" class="form-control" id="dueDate" aria-describedby="task due date" placeholder="Enter Due Date">
 				</div>
 				<button id="add-task" class="btn btn-primary">Add Task</button>
 
@@ -35,7 +35,7 @@
 		<div class="col-sm-6">
 			<ul id="filters">
 				<li><input type="radio" name="filterOptions" value="duesoon" id="filter-duesoon">
-					<label class="form-check-label" for="duesoon">Due soon</label>
+					<label class="form-check-label" for="duesoon">Due</label>
 				</li>
 				<li><input type="radio" name="filterOptions" value="overdue" id="filter-overdue">
 					<label class="form-check-label" for="overdue">Overdue</label>

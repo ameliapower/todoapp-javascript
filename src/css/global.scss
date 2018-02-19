@@ -1,22 +1,36 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+
 body{
-	background: #f1f1f1;
+	background: LightSteelBlue;
 }
 
 #task-list{
 	border: 1px solid #444;
+	background: WhiteSmoke;
 	display: block;
     min-height: 400px;
     margin: 20px 0px;
     padding: 0;
+
 
 	li{
 		display: inline-block;
 		width:100%;
 		position: relative;
 		padding: 10px 5px 5px;
+		border-bottom:1px solid #444;
 
-		p{
+		&:hover, &:focus{
+	    	background: AliceBlue;
+	    }
+		
+		.task-name{
+			cursor: pointer;
+			display: inline-block;
+    		width: 100%;
 			padding: 10px 0px 0;
+			font-weight: 500;
 		}
 
 		.remove-task{
@@ -30,30 +44,36 @@ body{
 			float:right;
 			padding-right:10px;
 			font-size: 1.2rem;
+			margin: 20px 0px 0px;
 		}
 		.date{
-			padding-left: 30px;
+			padding: 20px 20px 0 30px;
+			float: right;
 		}
 	} //li
    
 } //#task-list
 
-
-span{
-	padding-right:10px;
+#view-more{
+	padding-left: 10px;
+    font-size: 1.7rem;
+}
+.fa-chevron-circle-down{
+	font-family: "fontAwesome";
+	font-style: normal;
+	color: #337ab7;
+}
+.fa-exclamation-triangle, .far.fa-bell{
+	font-family: "fontAwesome";
+	font-style: normal;
+	color: tomato;
 }
 
-li.due-now{
-	background: pink;
-	border: 1px solid red;
-}
-li.overdue{
-	background: red;
-	border: 1px solid chocolate;
-}
 li.toggleCompleted{
 	color: #ccc;
-	text-decoration: line-through;
+	&:after{
+		color: #ccc;
+	}
 }
 .hidden{
 	display:none;
@@ -75,6 +95,4 @@ li.toggleCompleted{
 		}
 	}
 }
-.hidden{
-	display:none;
-}
+

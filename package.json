@@ -9,7 +9,11 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "Javascript",
+    "Webpack",
+    "Bootstrap"
+  ],
   "author": "Amelia Power",
   "license": "ISC",
   "devDependencies": {
@@ -31,6 +35,6 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "lodash": "^4.17.5"
+    "font-awesome": "^4.7.0"
   }
 }
